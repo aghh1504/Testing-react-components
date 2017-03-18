@@ -1,0 +1,58 @@
+exports[`Component: App input will update the state 1`] = `
+<App
+  items={Array []}>
+  <div>
+    <form
+      className="App"
+      onSubmit={[Function]}>
+      <input
+        onChange={[Function]}
+        value="Changed input" />
+      <button>
+        Submit
+      </button>
+    </form>
+    <List
+      items={Array []}>
+      <ul />
+    </List>
+  </div>
+</App>
+`;
+
+exports[`Component: App should add an item based on the value in the state 1`] = `
+<div>
+  <form
+    className="App"
+    onSubmit={[Function]}>
+    <input
+      onChange={[Function]}
+      value="" />
+    <button>
+      Submit
+    </button>
+  </form>
+  <List
+    items={
+      Array [
+        "",
+      ]
+    } />
+</div>
+`;
+
+exports[`Component: App should render the App 1`] = `
+<div>
+  <form
+    className="App"
+    onSubmit={[Function]}>
+    <input
+      onChange={[Function]}
+      value="" />
+    <button>
+      Submit
+    </button>
+  </form>
+  <ul />
+</div>
+`;
