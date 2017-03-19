@@ -1,53 +1,66 @@
-exports[`Component: App input will update the state 1`] = `
-<App
-  items={Array []}>
-  <div>
-    <form
-      className="App"
-      onSubmit={[Function]}>
-      <input
-        onChange={[Function]}
-        value="Changed input" />
-      <button>
-        Submit
-      </button>
-    </form>
-    <List
-      items={Array []}>
-      <ul />
-    </List>
-  </div>
-</App>
-`;
-
-exports[`Component: App should add an item based on the value in the state 1`] = `
+exports[`Component: App should add an item 1`] = `
 <div>
   <form
     className="App"
     onSubmit={[Function]}>
     <input
       onChange={[Function]}
+      type="text"
       value="" />
     <button>
       Submit
     </button>
   </form>
-  <List
-    items={
-      Array [
-        "",
-      ]
-    } />
+  <ul />
 </div>
 `;
 
-exports[`Component: App should render the App 1`] = `
+exports[`Component: App should add an item 2`] = `
 <div>
   <form
     className="App"
     onSubmit={[Function]}>
     <input
       onChange={[Function]}
+      type="text"
+      value="" />
+    <button>
+      Submit
+    </button>
+  </form>
+  <ul>
+    <li>
+      Some random text
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Component: App should match its empty snapshot 1`] = `
+<div>
+  <form
+    className="App"
+    onSubmit={[Function]}>
+    <input
+      onChange={[Function]}
+      type="text"
+      value="" />
+    <button>
+      Submit
+    </button>
+  </form>
+  <ul />
+</div>
+`;
+
+exports[`Component: App should match its snapshot with items 1`] = `
+<div>
+  <form
+    className="App"
+    onSubmit={[Function]}>
+    <input
+      onChange={[Function]}
+      type="text"
       value="" />
     <button>
       Submit

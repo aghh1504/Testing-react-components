@@ -4,7 +4,7 @@ import React from 'react';
     return (
       <ul>
         {
-          props.items.map( item =>  <li>{item}</li> )
+          props.items.map( (item, index) =>  <li key={index}>{item}</li> )
         }
       </ul>
     )

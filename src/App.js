@@ -26,7 +26,7 @@ export default class App extends Component {
     return (
       <div>
         <form className="App" onSubmit={this.onSubmit}>
-            <input value={this.state.term} onChange={this.onChange} />
+            <input type='text' value={this.state.term} onChange={this.onChange} />
             <button>Submit</button>
         </form>
         <List items={this.state.items}/>
