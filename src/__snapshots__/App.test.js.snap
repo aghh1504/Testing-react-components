@@ -1,4 +1,4 @@
-exports[`Component: App should add an item 1`] = `
+exports[`Component: App should add an item based on the value in the state 1`] = `
 <div>
   <form
     className="App"
@@ -11,28 +11,15 @@ exports[`Component: App should add an item 1`] = `
       Submit
     </button>
   </form>
-  <ul />
-</div>
-`;
-
-exports[`Component: App should add an item 2`] = `
-<div>
-  <form
-    className="App"
-    onSubmit={[Function]}>
-    <input
-      onChange={[Function]}
-      type="text"
-      value="" />
-    <button>
-      Submit
-    </button>
-  </form>
-  <ul>
-    <li>
-      Some random text
-    </li>
-  </ul>
+  <List
+    items={
+      Array [
+        "Learn react",
+        "rest",
+        "go out",
+        "",
+      ]
+    } />
 </div>
 `;
 
@@ -53,7 +40,7 @@ exports[`Component: App should match its empty snapshot 1`] = `
 </div>
 `;
 
-exports[`Component: App should match its snapshot with items 1`] = `
+exports[`Component: App should pass a selected value to the onChange function 1`] = `
 <div>
   <form
     className="App"
@@ -61,11 +48,12 @@ exports[`Component: App should match its snapshot with items 1`] = `
     <input
       onChange={[Function]}
       type="text"
-      value="" />
+      value="Change function" />
     <button>
       Submit
     </button>
   </form>
-  <ul />
+  <List
+    items={Array []} />
 </div>
 `;
