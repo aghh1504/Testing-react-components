@@ -28,10 +28,7 @@ describe('Component: App', () => {
   });
 
   it('should pass a selected value to the onChange function', () => {
-    const tree = renderer.create(
-      <App />
-    );
-    const component = shallow(<App items={items} />);
+    const component = shallow(<App />);
     component.find('input').simulate('change', { target: {
       value: 'Change function' }
     });
